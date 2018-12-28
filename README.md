@@ -7,8 +7,7 @@ Cookiecutter template for generating and building vuetify vue-component.
 Install `cookiecutter`: https://cookiecutter.readthedocs.io/en/latest/installation.html
 
 ``` bash
-git clone git@github.com:4teamwork/vuetify-component-template.git
-cookiecutter vue-component-template
+cookiecutter git@github.com:4teamwork/vuetify-component-template.git
 ```
 
 ```
