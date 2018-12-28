@@ -1,20 +1,23 @@
 {
   "name": "{{cookiecutter.project_name}}",
+  "description": "{{cookiecutter.description}}",
   "version": "0.1.0",
   "private": true,
   "main": "./dist/{{cookiecutter.project_name}}.common.js",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/4teamwork/{{cookiecutter.project_name}}.git"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --target lib --name {{cookiecutter.library_name}} src/components/{{cookiecutter.component_name}}.vue",
     "lint": "vue-cli-service lint",
-    "test:unit": "vue-cli-service test:unit"
+    "test:unit": "vue-cli-service test:unit",
+    "preversion": "yarn run test:unit && yarn run build",
+    "postversion": "git push --tags && yarn publish --tag $npm_package_version --new-version $npm_package_version && git push",
+    "release": "yarn version"
   },
-  "files": [
-    "dist/*",
-    "src/*",
-    "*.json",
-    "*.js"
-  ],
   "dependencies": {
     "lodash": "^4.17.11",
     "material-design-icons-iconfont": "^4.0.3",

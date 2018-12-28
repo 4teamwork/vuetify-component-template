@@ -1,5 +1,7 @@
 # {{cookiecutter.project_name}}
 
+{{cookiecutter.description}}
+
 ## Project setup
 ```
 yarn install
@@ -23,4 +25,10 @@ yarn run lint
 ### Run your unit tests
 ```
 yarn run test:unit
+```
+
+## Release
+
+```
+yarn run release
 ```
