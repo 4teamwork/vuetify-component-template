@@ -1,5 +1,5 @@
 {
-  "name": "{{cookiecutter.project_name}}",
+  "name": "@4tw/{{cookiecutter.project_name}}",
   "description": "{{cookiecutter.description}}",
   "version": "0.1.0",
   "private": true,
