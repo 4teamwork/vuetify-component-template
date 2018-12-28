@@ -1,0 +1,5 @@
+{
+  "project_name": "vue-very-awesome",
+  "library_name": "{{ cookiecutter.project_name.replace('vue-', '', 1) }}",
+  "component_name": "{{ cookiecutter.library_name.lower().split('-')|map('capitalize')|join }}"
+}
