@@ -15,7 +15,7 @@
     "lint": "vue-cli-service lint",
     "test:unit": "vue-cli-service test:unit",
     "preversion": "yarn run lint && yarn run test:unit && yarn run build",
-    "postversion": "git push --tags && yarn publish --tag $npm_package_version --new-version $npm_package_version && git push",
+    "postversion": "git push --tags && npm publish --access=public && git push",
     "release": "yarn version"
   },
   "dependencies": {
