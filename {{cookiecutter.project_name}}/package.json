@@ -2,7 +2,7 @@
   "name": "@4tw/{{cookiecutter.project_name}}",
   "description": "{{cookiecutter.description}}",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "main": "./dist/{{cookiecutter.project_name}}.common.js",
   "license": "MIT",
   "repository": {
