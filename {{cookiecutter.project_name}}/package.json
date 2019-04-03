@@ -3,7 +3,7 @@
   "description": "{{cookiecutter.description}}",
   "version": "0.1.0",
   "private": false,
-  "main": "./dist/{{cookiecutter.project_name}}.common.js",
+  "main": "./dist/{{cookiecutter.library_name}}.common.js",
   "license": "MIT",
   "repository": {
     "type": "git",
